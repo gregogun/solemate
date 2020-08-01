@@ -1,0 +1,435 @@
+header {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    padding-top: 2%;
+    background-color: $primary-col-light;
+}
+
+.navbar {
+    margin: auto;
+    width: 100%;
+    height: 7.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6% 0 5%;
+    // background-color: mediumaquamarine;
+
+    .logo {
+        cursor: pointer;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        z-index: 1;
+    }
+
+    .menu {
+        cursor: pointer;
+        width: 18px;
+        height: 12px;
+    }
+
+
+}
+
+
+.carousel {
+    margin: auto;
+    width: 90%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    // background-color: lightpink;
+
+    &__image-container{
+        display: block;
+        margin: 0 auto 8px auto;
+        width: 100%;
+        height: 50%;
+        background-color: lightcyan;
+    }
+
+    &__image {
+        // display: none;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__text {
+        text-align: center;
+    }
+
+    &__hero-box {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 50%;
+        // background-color: lightgreen;
+
+        .carousel__button {
+            margin: 0 auto 24px auto;
+            width: 160px;
+            height: 48px;
+            background-color: $primary-col-dark;
+            color: $primary-col-light;
+            font-size: 1rem;
+        }
+
+
+        .carousel__text--heading {
+            font-family: $heading-font-fam;
+            font-size: $h2-size-mobile;
+            font-weight: $heading-font-weight;
+            line-height: 3rem;
+            letter-spacing: -1px;
+            margin-bottom: 12px;
+            // background-color: lightgoldenrodyellow;
+        }
+
+        .carousel__text--body {
+            line-height: 2rem;
+        }
+
+
+    }
+
+    &__nav {
+        display: none;
+    }
+
+
+    &__offer {
+        position: relative;
+        margin: 0 auto 8px auto;
+        width: 176px;
+        height: 64px;
+
+        .carousel__price {
+            margin: 4px 0;
+            text-align: center;
+        }
+
+        .carousel__price--new {
+            position: relative;
+            bottom: -2px;
+            color: $accent-red-dark;
+        }
+
+        // .carousel__currency-switcher {
+        //     display: inline;
+        // }
+        
+    }
+    
+    
+
+    &__nav-counter {
+        display: none;
+    }
+}
+
+.payment-method {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    width: 75%;
+    height: 5%;
+    // background-color: lightseagreen;
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    &__mastercard {
+        width: 16px;
+        height: 16px;
+    }
+
+    &__paypal {
+        width: 12px;
+        height: 12px;
+    }
+
+    
+}
+
+
+
+
+
+
+/* 
+Small devices (portrait tablets and larger phones - 600px and up)
+
+
+Medium devices (Landscape tablets - 768px and up)
+
+Larger devices (Laptops/Desktops - 992px and up)
+
+Extra large devices (Large laptops/desktops 1200px and up)
+*/
+
+@media screen and (min-width: 600px) {
+
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        width: 100%;
+
+
+        .logo {
+            font-size: 1.25rem;
+        }
+
+        .menu {
+            width: 24px;
+            height: 24px;
+        }
+
+    }   
+
+
+    .carousel {
+
+        &__image-container{
+            height: 50%;
+            margin-bottom: 56px;
+
+        }
+
+        &__hero-box {
+            height: 30%;
+        }
+    }
+
+
+    .payment-method {
+        width: 35%;
+
+    
+        &__icon {
+            width: 32px;
+            margin: auto 8px;
+        }
+
+    }
+    
+
+
+}
+
+
+
+@media screen and (min-width: 992px) {
+    
+}
+
+
+
+@media screen and (min-width: 1280px) {
+
+    .navbar {
+        width: 100%;
+
+        .logo {
+            font-size: 1.5rem;
+        }
+
+        .menu {
+            width: 24px;
+            height: 24px;
+        }
+
+    }    
+
+    
+    .carousel {
+        height: 85%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        box-sizing: border-box;
+
+        &__image-container{
+            width: 976px;
+            height: 720px;
+
+        }
+
+
+        &__hero-box {
+            position: absolute;
+            order: -1;
+            height: 35%;
+            width: 25%;
+            padding-top: 4%;
+            display: flex;
+            flex-direction: column;
+    
+            .carousel__button {
+                margin: 0;
+                position: relative;
+                left: 0;
+                order: 1;
+                width: 200px;
+                height: 48px;
+            }
+    
+    
+            .carousel__text--heading {
+                text-align: left;
+                font-size: $h2-size-desktop;
+                margin: 16px 0;
+
+                .heading-block {
+                    display: block;
+                }
+            }
+    
+            .carousel__text--body {
+                display: none;
+            }
+    
+        }
+
+        &__nav {
+            width: 20%;
+            height: 10%;
+            display: flex;
+            justify-content: space-between;
+    
+        }
+    
+        &__navButton {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+    
+        &__navButton--next {
+    
+        }
+
+
+        &__offer {
+            position: absolute;
+            z-index: 1;
+            right: 5%;
+            bottom: 52.5%;
+
+            .carousel__price {
+                margin: 16px 0;
+            }
+
+            .carousel__price--old {
+                font-size: 1.25rem;
+            }
+    
+            .carousel__price--new {
+                font-size: 1.5rem;
+                line-height: 2rem;
+            }
+            
+        }
+
+        &__nav-counter {
+            position: absolute;
+            bottom: 5%;
+            left: 5%;
+            width: 132px;
+            height: 48px;
+            display: flex;
+            justify-content: space-evenly;
+
+            .carousel__indicator {
+                cursor: pointer;
+                padding-top: 16px;
+                width: 44px;
+                height: 48px;
+
+                p {
+                    text-align: center;
+                    font-weight: 700;
+                    font-size: 0.75rem;
+                }
+            }
+
+            .carousel__indicator--active {
+                background-color: $yellow-500;
+            }
+
+        }
+
+    }
+
+
+    .payment-method {
+        width: 30%;
+        position: absolute;
+        bottom: 5%;
+        right: 5%;
+
+        &__icon {
+            width: 40px;
+            height: 40px;
+        }
+
+        &__paypal {
+            width: 24px;
+            height: 24px;
+        }
+
+    }
+        
+    
+}
+
+
+
+
+
+@media screen and (min-width: 1440px) {
+    .navbar {
+        width: 90%;
+    } 
+
+    .carousel {
+        width: 80%;
+
+        &__image-container{
+            width: 1024px;
+            height: 768px;
+            
+        }
+
+
+        &__hero-box {
+            width: 20%;
+        }
+
+        &__offer {
+            right: 10%;
+        }
+
+        &__nav-counter {
+            left: 10%;
+        }
+    }
+
+
+    .payment-method {
+        right: 10%;
+
+    }
+
+    
+}

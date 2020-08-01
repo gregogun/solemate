@@ -1,0 +1,23 @@
+$primary-col-light: $grey-000;
+$primary-col-dark: $grey-900;
+$secondary-col: $yellow-500;
+$neutral-blue-light: $blue-200;
+$neutral-blue-dark: $blue-800;
+$neutral-grey-light: $grey-100;
+$neutral-grey-dark: $grey-500;
+$accent-green-light: $green-300;
+$accent-green-dark: $green-500;
+$accent-orange-light: $orange-300;
+$accent-orange-dark: $orange-600;
+$accent-red-light: $red-200;
+$accent-red-dark: $red-600;
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+p,h1,h2,h3,h4,h5,button {
+    font-family: 'Karla', sans-serif;
+    color: $primary-col-dark;
+}
+

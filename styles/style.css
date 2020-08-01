@@ -1,1 +1,385 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Poppins:wght@700&display=swap");
+/* 
+Small devices (portrait tablets and larger phones - 600px and up)
+
+Medium devices (Landscape tablets - 768px and up)
+
+Larger devices (Laptops/Desktops - 992px and up)
+
+Extra large devices (Large laptops/desktops 1200px and up)
+*/
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+p, h1, h2, h3, h4, h5, button {
+  font-family: 'Karla', sans-serif;
+  color: #24292e;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  padding-top: 2%;
+  background-color: #fafbfc;
+}
+
+.navbar {
+  margin: auto;
+  width: 100%;
+  height: 7.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 6% 0 5%;
+}
+
+.navbar .logo {
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  z-index: 1;
+}
+
+.navbar .menu {
+  cursor: pointer;
+  width: 18px;
+  height: 12px;
+}
+
+.carousel {
+  margin: auto;
+  width: 90%;
+  height: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.carousel__image-container {
+  display: block;
+  margin: 0 auto 8px auto;
+  width: 100%;
+  height: 50%;
+  background-color: lightcyan;
+}
+
+.carousel__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carousel__text {
+  text-align: center;
+}
+
+.carousel__hero-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 50%;
+}
+
+.carousel__hero-box .carousel__button {
+  margin: 0 auto 24px auto;
+  width: 160px;
+  height: 48px;
+  background-color: #24292e;
+  color: #fafbfc;
+  font-size: 1rem;
+}
+
+.carousel__hero-box .carousel__text--heading {
+  font-family: "Karla", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3rem;
+  letter-spacing: -1px;
+  margin-bottom: 12px;
+}
+
+.carousel__hero-box .carousel__text--body {
+  line-height: 2rem;
+}
+
+.carousel__nav {
+  display: none;
+}
+
+.carousel__offer {
+  position: relative;
+  margin: 0 auto 8px auto;
+  width: 176px;
+  height: 64px;
+}
+
+.carousel__offer .carousel__price {
+  margin: 4px 0;
+  text-align: center;
+}
+
+.carousel__offer .carousel__price--new {
+  position: relative;
+  bottom: -2px;
+  color: #cb2431;
+}
+
+.carousel__nav-counter {
+  display: none;
+}
+
+.payment-method {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  width: 75%;
+  height: 5%;
+}
+
+.payment-method__icon {
+  width: 24px;
+  height: 24px;
+}
+
+.payment-method__mastercard {
+  width: 16px;
+  height: 16px;
+}
+
+.payment-method__paypal {
+  width: 12px;
+  height: 12px;
+}
+
+/* 
+Small devices (portrait tablets and larger phones - 600px and up)
+
+
+Medium devices (Landscape tablets - 768px and up)
+
+Larger devices (Laptops/Desktops - 992px and up)
+
+Extra large devices (Large laptops/desktops 1200px and up)
+*/
+@media screen and (min-width: 768px) {
+  .navbar {
+    width: 100%;
+  }
+  .navbar .logo {
+    font-size: 1.25rem;
+  }
+  .navbar .menu {
+    width: 24px;
+    height: 24px;
+  }
+  .carousel__image-container {
+    height: 50%;
+    margin-bottom: 56px;
+  }
+  .carousel__hero-box {
+    height: 30%;
+  }
+  .payment-method {
+    width: 35%;
+  }
+  .payment-method__icon {
+    width: 32px;
+    margin: auto 8px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .navbar {
+    width: 100%;
+  }
+  .navbar .logo {
+    font-size: 1.5rem;
+  }
+  .navbar .menu {
+    width: 24px;
+    height: 24px;
+  }
+  .carousel {
+    height: 85%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .carousel__image-container {
+    width: 976px;
+    height: 720px;
+  }
+  .carousel__hero-box {
+    position: absolute;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    height: 35%;
+    width: 25%;
+    padding-top: 4%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .carousel__hero-box .carousel__button {
+    margin: 0;
+    position: relative;
+    left: 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 200px;
+    height: 48px;
+  }
+  .carousel__hero-box .carousel__text--heading {
+    text-align: left;
+    font-size: 3rem;
+    margin: 16px 0;
+  }
+  .carousel__hero-box .carousel__text--heading .heading-block {
+    display: block;
+  }
+  .carousel__hero-box .carousel__text--body {
+    display: none;
+  }
+  .carousel__nav {
+    width: 20%;
+    height: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .carousel__navButton {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  .carousel__offer {
+    position: absolute;
+    z-index: 1;
+    right: 5%;
+    bottom: 52.5%;
+  }
+  .carousel__offer .carousel__price {
+    margin: 16px 0;
+  }
+  .carousel__offer .carousel__price--old {
+    font-size: 1.25rem;
+  }
+  .carousel__offer .carousel__price--new {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .carousel__nav-counter {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    width: 132px;
+    height: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .carousel__nav-counter .carousel__indicator {
+    cursor: pointer;
+    padding-top: 16px;
+    width: 44px;
+    height: 48px;
+  }
+  .carousel__nav-counter .carousel__indicator p {
+    text-align: center;
+    font-weight: 700;
+    font-size: 0.75rem;
+  }
+  .carousel__nav-counter .carousel__indicator--active {
+    background-color: #ffd33d;
+  }
+  .payment-method {
+    width: 30%;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+  }
+  .payment-method__icon {
+    width: 40px;
+    height: 40px;
+  }
+  .payment-method__paypal {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .navbar {
+    width: 90%;
+  }
+  .carousel {
+    width: 80%;
+  }
+  .carousel__image-container {
+    width: 1024px;
+    height: 768px;
+  }
+  .carousel__hero-box {
+    width: 20%;
+  }
+  .carousel__offer {
+    right: 10%;
+  }
+  .carousel__nav-counter {
+    left: 10%;
+  }
+  .payment-method {
+    right: 10%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
